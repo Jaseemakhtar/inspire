@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/edtOldBookName"
+        android:hint="@string/edit_old_book_name"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_margin="4dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edtOldBookDesc"
+        android:hint="@string/edit_old_book_desc"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_margin="4dp"
+        android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnOldBookSelect"
+            android:text="@string/btn_choose_image"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnOldBookUpload"
+            android:text="@string/btn_upload"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnOldBookCancel"
+            android:text="@string/btn_cancel"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

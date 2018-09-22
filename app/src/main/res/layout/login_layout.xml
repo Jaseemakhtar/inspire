@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="true"
+        android:id="@+id/progressBarLogin"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/inspire_logo_act"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edtPhoneLogin"
+            android:background="@drawable/edittext_background"
+            android:textColorHint="#e2dcdc"
+            android:textColor="#FF2598F3"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="8dp"
+            android:inputType="phone"
+            android:lines="1"
+            android:hint="@string/phoneno_hint"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtPasswordLogin"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FF2598F3"
+            android:drawableLeft="@drawable/ic_security_black_24dp"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:textColorHint="#e2dcdc"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/errorLayout"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/ic_error_outline_black_24dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <TextView
+                android:id="@+id/txtError"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text=" "
+                android:textColor="#df0518"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnLogin"
+            android:text="@string/login_button_text"
+            android:textColor="#fff"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnToRegister"
+            android:text="@string/or_register_button_text"
+            android:textColor="#fff"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/button_background"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

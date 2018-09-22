@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jsync.freebook.ImageCropperActivity">
+
+        <com.isseiaoki.simplecropview.CropImageView
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:padding="16dp"
+            android:id="@+id/cropImageView"
+            custom:scv_crop_mode="fit_image"
+            custom:scv_background_color="@android:color/white"
+            custom:scv_handle_color="#21bf8f"
+            custom:scv_guide_color="#21bf8f"
+            custom:scv_overlay_color="#60000000"
+            custom:scv_frame_color="#21bf8f"
+            custom:scv_handle_size="14dp"
+            custom:scv_touch_padding="8dp"
+            custom:scv_handle_show_mode="show_always"
+            custom:scv_guide_show_mode="show_always"
+            custom:scv_frame_stroke_weight="1dp"
+            custom:scv_guide_stroke_weight="1dp" />
+        />
+        <Button
+            android:id="@+id/btnCrop"
+            android:text="@string/btn_crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+</LinearLayout>
